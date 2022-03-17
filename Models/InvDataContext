@@ -1,0 +1,14 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using Microsoft.EntityFrameworkCore;
+
+namespace ShopBridge.Models
+{
+    public class InvDataContext : DbContext
+    {
+        public DbSet<Inventory> inventory { get; set; }
+        
+    }
+}
